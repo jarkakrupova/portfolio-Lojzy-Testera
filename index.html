@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojza Tester</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background-color: #0d6efd;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .project-card {
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Úvodní sekce -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Lojza Tester</h1>
+            <p class="lead">Jsem junior programátor a zde najdete mé projekty, které jsem vytvořil během studia a samostatné práce.</p>
+        </div>
+    </section>
+
+    <!-- Sekce s projekty -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Moje projekty</h2>
+
+        <!-- Samostatné projekty -->
+        <h3 class="mb-4">Samostatné projekty</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <!-- Carousel -->
+                    <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img\magistri1.png" class="card-img-top project-img p-2" alt="Seznam predmetu">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\magistri2.png" class="d-block w-100 carousel-img p-2" alt="Přidání známky">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\magistri3.png" class="d-block w-100 carousel-img p-2" alt="Editace role">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>     
+                    <div class="card-body">
+                        <h5 class="card-title">Magistři</h5>
+                        <p class="card-text">Systém pro správu školy (žáci, předměty, známky) - ASP.NET Core MVC + ASP.NET Identity</p>
+                        <div class="pb-2">
+                            <img src="https://img.icons8.com/?size=100&id=Fycm8TUhWmFU&format=png&color=000000" alt="C#" srcset="">
+                            <img src="https://img.icons8.com/?size=100&id=1BC75jFEBED6&format=png&color=000000" alt=".NET Core" srcset="">
+                            <img src="https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000" alt="MS SQL" srcset="">
+                            <img src="https://img.icons8.com/?size=100&id=VLKafOkk3sBX&format=png&color=000000" alt="Azure" srcset="">
+
+                        </div>
+                        
+                        <div>
+                            <a href="https://magistrixml.azurewebsites.net" class="btn btn-primary"><i class="bi bi-globe"></i> Aplikace</a>
+                            <a href="#" class="btn btn-dark"><i class="bi bi-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img\pocasiunas1.png" class="card-img-top project-img p-2" alt="Seznam predmetu">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\pocasiunas2.png" class="d-block w-100 carousel-img p-2" alt="Přidání známky">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\pocasiunas3.png" class="d-block w-100 carousel-img p-2" alt="Editace role">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>                      
+                    <div class="card-body">
+                        <h5 class="card-title">Počasí u nás</h5>
+                        <p class="card-text">Spring Boot API se Swaggerem pro získávání nejrůznějších údajů o počasí</p>
+                        <!-- <strong>Použité technologie:</strong>
+                        <ul>
+                            <li>Spring Boot</li>
+                            <li>Swager</li>
+                        </ul> -->
+                        <div class="pb-2">
+                            <img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000" alt="Java" srcset="">
+                            <img src="https://img.icons8.com/?size=80&id=rdKV2dee9wxd&format=png&color=000000" alt="Swagger" srcset="">
+                            <img src="https://img.icons8.com/?size=80&id=2oBx9FpXcbLa&format=png&color=000000" alt="Spring Boot" srcset="">
+                            <img src="https://img.icons8.com/?size=100&id=VLKafOkk3sBX&format=png&color=000000" alt="Azure" srcset="">
+                     </div>
+                        
+                        
+                        <div>
+                            <a href="https://pocasiunas.azurewebsites.net/swagger-ui/index.html#/" class="btn btn-primary"><i class="bi bi-globe"></i> Odkaz na aplikaci</a>
+                            <a href="#" class="btn btn-dark"><i class="bi bi-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Školní projekty -->
+        <h3 class="mb-4 mt-5">Školní projekty</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top project-img" alt="Školní projekt 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Název školního projektu 1</h5>
+                        <p class="card-text">Krátký popis školního projektu 1. Co dělá, jaké technologie byly použity.</p>
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-primary">Odkaz na aplikaci</a>
+                            <a href="#" class="btn btn-dark">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top project-img" alt="Školní projekt 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Název školního projektu 2</h5>
+                        <p class="card-text">Krátký popis školního projektu 2. Co dělá, jaké technologie byly použity.</p>
+                        <div class="d-grid gap-2">
+                            <a href="#" class="btn btn-primary">Odkaz na aplikaci</a>
+                            <a href="#" class="btn btn-dark">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
